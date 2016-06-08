@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        automanyi
 // @namespace   automanyi
-// @include     */quanquan6.com/adminmetro/declaration/UserApplySubject.aspx*
+// @include     *quanquan6.com/adminmetro/declaration/UserApplySubject.aspx*
 // @version     1
 // @grant       none
 // ==/UserScript==
