@@ -6,8 +6,12 @@
 // @grant       none
 // ==/UserScript==
 
-window.addEventListener('load', () => {
-  window.confirm = () => true;
-  Array.prototype.slice.call(document.querySelectorAll('input[type="radio"]:nth-of-type(3)')).forEach(b => b.click());
+window.addEventListener('load', function () {
+  window.confirm = function () {
+    return true;
+  };
+  Array.prototype.slice.call(document.querySelectorAll('input[type="radio"]:nth-of-type(3)')).forEach(function (b) {
+    return b.click();
+  });
   document.querySelector('#btnSubmit').click();
 });
