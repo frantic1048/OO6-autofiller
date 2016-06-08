@@ -25,11 +25,14 @@ Getting Relaxed
 var diaoyan = /课程调研/;
 Array.prototype.slice.call(document.getElementById('sysMain').contentDocument.querySelector('#tab_1_1 > div:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1)').children, 8).map(function (tr) {
   return tr.querySelector('a:only-child');
-}).forEach(function (a) {
-  if (diaoyan.test(a.textContent)) {
-    a.setAttribute('target', '_blank');a.click();
-  }
-});
+}).reduce(function (delay, a) {
+  setTimeout(function () {
+    if (diaoyan.test(a.textContent)) {
+      a.setAttribute('target', '_blank');a.click();
+    }
+  }, delay);
+  return delay + 999;
+}, 0);
 ```
 
 Then, take a drink and see magic happens \_(*′☉.̫☉)」∠)\_
