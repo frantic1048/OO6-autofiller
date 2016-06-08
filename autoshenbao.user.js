@@ -6,6 +6,6 @@
 // @grant       none
 // ==/UserScript==
 
-window.addEventListener('load', () => {
+window.addEventListener('load', function () {
   document.querySelector('#lbnApply').click();
-})
+});
