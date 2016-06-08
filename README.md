@@ -32,4 +32,4 @@ Array.prototype.slice.call(document.getElementById('sysMain').contentDocument.qu
 });
 ```
 
-8. Take a drink and see magic happens \_(*′☉.̫☉)」∠)\_
+Then, take a drink and see magic happens \_(*′☉.̫☉)」∠)\_
