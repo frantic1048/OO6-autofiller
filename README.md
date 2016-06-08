@@ -22,6 +22,14 @@ Getting Relaxed
 7. Open your browser's console, `copy & paste` fellow code, then press `Enter` key to execute it:
 
 ```js
-  let diaoyan = /课程调研/;
-  Array.prototype.slice.call(document.getElementById('sysMain').contentDocument.querySelector('#tab_1_1 > div:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1)').children, 8).map(tr => tr.querySelector('a:only-child')).forEach(a => { if(raha.test(a.textContent)) {a.setAttribute('target', '_blank'); a.click();} })
+var diaoyan = /课程调研/;
+Array.prototype.slice.call(document.getElementById('sysMain').contentDocument.querySelector('#tab_1_1 > div:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1)').children, 8).map(function (tr) {
+  return tr.querySelector('a:only-child');
+}).forEach(function (a) {
+  if (raha.test(a.textContent)) {
+    a.setAttribute('target', '_blank');a.click();
+  }
+});
 ```
+
+8. Take a drink and see magic happens \_(*′☉.̫☉)」∠)\_
