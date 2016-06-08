@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        autoshenbao
 // @namespace   autoshenbao
-// @include     */quanquan6.com/adminmetro/declaration/ShowApplySubject.aspx*
-// @version     1
+// @include     *quanquan6.com/adminmetro/declaration/ShowApplySubject.aspx*
+// @version     2
 // @grant       none
 // ==/UserScript==
 
