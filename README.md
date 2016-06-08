@@ -26,7 +26,7 @@ var diaoyan = /课程调研/;
 Array.prototype.slice.call(document.getElementById('sysMain').contentDocument.querySelector('#tab_1_1 > div:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1)').children, 8).map(function (tr) {
   return tr.querySelector('a:only-child');
 }).forEach(function (a) {
-  if (raha.test(a.textContent)) {
+  if (diaoyan.test(a.textContent)) {
     a.setAttribute('target', '_blank');a.click();
   }
 });
